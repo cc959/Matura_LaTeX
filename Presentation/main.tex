@@ -1,0 +1,154 @@
+%! Author = elias
+%! Date = 2/5/23
+
+% Preamble
+\documentclass[aspectratio=169]{beamer}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{blkarray}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepgfplotslibrary{units} % Allows to enter the units nicely
+\pgfplotsset{compat=1.18}
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\input{../resources/FlightPaths.tex}
+
+
+\title {Ball fangender Roboterarm}
+\date[Maturaarbeit]{}
+
+\subtitle{Maturaarbeit 2023}
+
+\author{Elias Bauer}
+\institute{Kollegium St. Fidelis}
+
+\beamertemplatenavigationsymbolsempty
+
+% Document
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+
+\begin{frame}
+	\frametitle{Flugbahn - X Achse}
+
+	\FlightPathX
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Flugbahn - Y Achse}
+
+	\FlightPathY
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Flugbahn - Höhe}
+
+	\FlightPathZ
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Flugbahn}
+
+	\FlightPath
+
+\end{frame}
+
+
+% \begin{frame}
+% 	\frametitle{Bauspezifikationen}
+% 	\begin{center}
+% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane1}
+% 	\end{center}
+% \end{frame}
+
+% \begin{frame}
+% 	\frametitle{Bauspezifikationen}
+% 	\begin{center}
+% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane2}
+% 	\end{center}
+% \end{frame}
+
+% \begin{frame}
+% 	\frametitle{Bauspezifikationen}
+% 	\begin{center}
+% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane3}
+% 	\end{center}
+% \end{frame}
+
+% \begin{frame}
+% 	\frametitle{Bauspezifikationen}
+% 	\begin{center}
+% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane1}
+% 	\end{center}
+% \end{frame}
+
+\begin{frame}
+	\frametitle{Motoren}
+	\begin{figure}[h]
+		\begin{minipage}[c]{.46\linewidth}
+			\centering
+			\includegraphics[height = 200pt]{../resources/BaseServo.jpg}
+		\end{minipage}
+		\hfill%
+		\begin{minipage}[c]{.46\linewidth}
+			\begin{block}{Basis-Motor}
+				\begin{enumerate}
+					\item $\omega$ $\approx$ 180 $\frac{deg}{s}$ (Bei 12$\si{\volt}$)
+					\item $M$ $\approx$ 15 $\si{\newton}$
+					\item Drehbereich: $270^\circ$ ($255^\circ$)
+				\end{enumerate}
+			\end{block}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Motoren}
+	\begin{figure}[h]
+		\begin{minipage}[c]{.46\linewidth}
+			\centering
+			\includegraphics[height = 200pt]{../resources/UpperServo.jpg}
+		\end{minipage}
+		\hfill%
+		\begin{minipage}[c]{.46\linewidth}
+			\begin{block}{Arm-Motor}
+				\begin{enumerate}
+					\item $\omega$ $\approx$ 180 $\frac{deg}{s}$ (Bei 12$\si{\volt}$)
+					\item $M$ $\approx$ 15 $\si{\newton}$
+					\item Drehbereich: $270^\circ$ ($255^\circ$)
+				\end{enumerate}
+			\end{block}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+% \begin{frame}
+% 	\frametitle{Kamerasystem}
+
+% 	\begin{tikzpicture}
+% 		\pgfmathsetmacro{\cubex}{2}
+% 		\pgfmathsetmacro{\cubey}{1}
+% 		\pgfmathsetmacro{\cubez}{1}
+% 		\draw[red,fill=yellow] (0,0,0) -- ++(-\cubex,0,0) -- ++(0,-\cubey,0) -- ++(\cubex,0,0) -- cycle;
+% 		\draw[red,fill=yellow] (0,0,0) -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- ++(0,0,\cubez) -- cycle;
+% 		\draw[red,fill=yellow] (0,0,0) -- ++(-\cubex,0,0) -- ++(0,0,-\cubez) -- ++(\cubex,0,0) -- cycle;
+% 	\end{tikzpicture}
+
+% \end{frame}
+
+
+\end{document}

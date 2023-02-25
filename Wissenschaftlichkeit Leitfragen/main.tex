@@ -1,0 +1,86 @@
+%! Author = elias
+%! Date = 2/5/23
+
+% Preamble
+\documentclass{article}
+\usepackage[a4paper, margin=0.5in]{geometry}
+
+
+% Packages
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{blkarray}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{units} % Allows to enter the units nicely
+
+\input{../resources/FlightPaths.tex}
+
+\title {Wissenschaftlichkeit der Maturaarbeit}
+\author{Elias Bauer}
+
+\date{}
+
+% Document
+\begin{document}
+\maketitle
+
+\section*{Titel: \small Roboterarm der einen Ball fängt}
+
+\section*{Leitfragen:}
+\begin{itemize}
+	\item Wie baut man einen Roboterarm der einen Ball fangen könnte?
+	\item Wie macht man ein Kamerasystem mit Webcams welches einen Ball (Grün, $\diameter$ 6cm) genau genug tracken kann?
+	\item Wie sagt man die Flugbahn des Balles genau genug voraus?
+	\item Wie integriert man diese systeme miteinander, damit der Arm den Ball dann auch fängt?
+\end{itemize}
+
+\section*{Kategorie: \small Naturwissenschaft}
+
+\section*{Begriffe:}
+
+\begin{itemize}
+	\item Roboterarm: Ein mit Motoren bewegter Arm, der sich genau genug und schnell genug bewegen kann,
+	      dass er einen Reifen mit Netz (Basketballkorbähnlich) in die Flugbahn eines Balles halten kann.
+	\item Kamerasystem: Besteht auf 2 kalibrierten Kameras die bei 1280x720 mit 60fps aufnehmen, welche ca. 2\si{\meter} voneinander entfernt angebracht sind sowie auf dem Roboterarm montierte \href{https://github.com/AprilRobotics/apriltag}{AprilTags}, um die Kamera-Position und Rotation relativ zu dem Roboterarm genau zu bestimmen.
+	\item Genauigkeit: Die Messungen und Vorhersagen sollten über die gesamte Flugbahn gemittelt nicht mehr
+	      als \newline 3cm = $\frac{1}{2} \diameter$ Ball von der Realität abweichen da sonst konsistentes Fangen des Balles mit einem nicht zu grossen Reifen
+	      (Durchmesser nicht mehr als 9cm = $1.5\diameter$ Ball) nicht möglich ist.
+	\item Ball fangen: Der Roboter sollte einen Ball, von unten zugeworfen aus ca. 2m Entfernung, konsistent \newline ($< 90\%$ Fangquote) im Netz des Reifen aufhalten können.
+\end{itemize}
+
+\section*{Methoden:}
+
+
+\begin{itemize}
+	\item Beim Roboterarm darauf achten, dass die Kraft der Motoren ausreicht, um das Trägheitsmoment des Armes zu überwinden, um den Arm schnell genug zu bewegen damit der Ball \emph{RELIABEL} abgefangen werden kann und es nicht auf die Position des Balles ankommt ob er schnell genug ist.
+	\item Beim zuwerfen vom Ball möglichst \emph{OBJEKTIV} werfen und nicht möglichst in die nähe des Reifen. Hier könnte man einige Testpersonen verwenden die noch nicht mit dem Roboterarm vertraut sind.
+	\item Bei der Vorhersage der Flugbahn den Unterschied zwischen Vorhersage und der echten Position abgleichen und dokumentieren. (Obwohl die Position des Armes während des Fluges verbessert werden kann, wenn neue Messungen reinkommen.) Ausserdem die Trefferquote festhalten und in welche Richtung der Fehler lag.
+\end{itemize}
+
+
+
+{\large Validität: $\checkmark$}
+{\large Relabilität: $\checkmark$}
+{\large Objektivität: $\checkmark$}
+
+
+% Flugbahn eines Balles auf der Erde (Grün, $\diameter$ 0.06\si{\meter}), der mit 2 Kameras (720p, 60fps) getrackt wurde:
+
+% \begin{center}
+% 	\begin{tabular}{ c c }
+% 		\FlightPathX[0.9] & \FlightPathY[0.9] \\
+% 		\FlightPathZ[0.9] & \FlightPath[0.9]  \\
+% 	\end{tabular}
+% \end{center}
+
+\end {document}

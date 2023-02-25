@@ -1,0 +1,123 @@
+\newcommand{\FlightPathX}[1][1]{
+	\begin{tikzpicture} [scale = #1]
+		\begin{axis} [
+				xmin = 0, xmax = 0.7,
+				ymin = -3, ymax= 3,
+				grid=major, % Display a grid
+				grid style={dashed, red!30},
+				xlabel=Zeit,
+				ylabel=Position,
+				x unit=\si{\second}, % Set the respective units
+				y unit=\si{\meter},
+			]
+
+			\addplot[
+				domain = 0:0.7,
+				smooth,
+				ultra thick,
+				gray!50
+			] {2.626712480 * x + -2.005835704};
+
+			\addplot[
+				domain = 0:0.7,
+				smooth,
+				only marks,
+				red,
+			] file[skip first] {../resources/FlightPathX.dat};
+
+
+		\end{axis}
+	\end{tikzpicture}
+}
+
+\newcommand{\FlightPathY}[1][1] {
+	\begin{tikzpicture} [scale = #1]
+		\begin{axis} [
+				xmin = 0, xmax = 0.7,
+				ymin = -3, ymax = 3,
+				grid=major, % Display a grid
+				grid style={dashed, green!30},
+				xlabel=Zeit,
+				ylabel=Position,
+				x unit=\si{\second}, % Set the respective units
+				y unit=\si{\meter},
+			]
+
+			\addplot[
+				domain = 0:0.7,
+				smooth,
+				ultra thick,
+				gray!50
+			] {-0.019158488 * x + 0.029724438};
+
+			\addplot[
+				domain = 0:0.7,
+				smooth,
+				only marks,
+				green,
+			] file[skip first] {../resources/FlightPathY.dat};
+
+
+		\end{axis}
+	\end{tikzpicture}
+}
+
+\newcommand{\FlightPathZ}[1][1] {
+	\begin{tikzpicture} [scale = #1]
+		\begin{axis} [
+				xmin = 0, xmax = 0.7,
+				grid=major, % Display a grid
+				grid style={dashed, blue!30},
+				xlabel=Zeit,
+				ylabel=Höhe,
+				x unit=\si{\second}, % Set the respective units
+				y unit=\si{\meter},
+			]
+
+			\addplot[
+				domain = 0:0.7,
+				smooth,
+				ultra thick,
+				gray!50
+			] {-5.170016538 * x * x + 3.026370508 * x + 0.539997655};
+
+			\addplot[
+				domain = 0:0.7,
+				smooth,
+				only marks,
+				blue,
+			] file[skip first] {../resources/FlightPathZ.dat};
+
+
+		\end{axis}
+	\end{tikzpicture}
+}
+
+
+\newcommand{\FlightPath}[1][1] {
+	\begin{tikzpicture} [scale = #1]
+		\begin{axis}
+			[   view={-60}{30},
+				xmin=-2.1,xmax=0,
+				ymin=-1,ymax=1,
+				zmin=0, zmax=1,
+				grid=major, % Display a grid
+				grid style={dashed, purple!30},
+				xlabel=X Position,
+				ylabel=Y Position,
+				zlabel=Höhe,
+				x unit=\si{\meter}, % Set the respective units
+				y unit=\si{\meter},
+				z unit=\si{\meter},
+			]
+			\addplot3[
+				mark=*,
+				blue,
+				mark options={
+						draw=black,
+						fill=purple,
+					},
+			] file{../resources/FlightPath3D.dat};
+		\end{axis}
+	\end{tikzpicture}
+}
