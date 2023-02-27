@@ -1,13 +1,13 @@
 # Fdb version 3
-["pdflatex"] 1677365916 "/home/elias/Documents/GitHub/Matura_LaTeX/Presentation/main.tex" "out/main.pdf" "main" 1677365918
+["pdflatex"] 1677430890 "/home/elias/Documents/GitHub/Matura_LaTeX/Presentation/main.tex" "out/main.pdf" "main" 1677430894
   "../resources/BaseServo.jpg" 1677270538 128389 82e185be9ceaaaa2f738fa10edb087b3 ""
-  "../resources/FlightPath3D.dat" 1675843068 1679 312be06d3c0aede08f546dd3b77fae4c ""
-  "../resources/FlightPathX.dat" 1675841729 1053 22bee1fc3173f00083ebadfb6e29b9ca ""
-  "../resources/FlightPathY.dat" 1675842766 1090 c5891abcea39e8149c96c9fc81d3a30c ""
-  "../resources/FlightPathZ.dat" 1675841729 1031 50e722e103df5ff3c6135b1140dc4b69 ""
-  "../resources/FlightPaths.tex" 1677264470 2369 bff0c64d6d2e0546930f6ccea4c3c37a ""
   "../resources/UpperServo.jpg" 1677353137 126141 4f27153f6e41468f460b3d1b93185efc ""
-  "/home/elias/Documents/GitHub/Matura_LaTeX/Presentation/main.tex" 1677365915 3205 5fc38f22a58fe891fde56119af8826bf ""
+  "../resources/blub/FlightPath3D.dat" 1677430890 2218 006b97402e6c148e7ce85702ee55118f ""
+  "../resources/blub/FlightPathX.dat" 1677430890 1459 09ce5c960456acf98e0feafae793a6a6 ""
+  "../resources/blub/FlightPathY.dat" 1677430890 1503 a0bd82c1cec7638f47b90224b0f2afb7 ""
+  "../resources/blub/FlightPathZ.dat" 1677430890 1389 479dfb1a482cfbeef4e80e25c48c3743 ""
+  "../resources/blub/FlightPaths.tex" 1677430890 18888 145a383a310d0de54cf6a821dbf30299 ""
+  "/home/elias/Documents/GitHub/Matura_LaTeX/Presentation/main.tex" 1677422431 3211 869443604fb3f63f65a754eb665e11e4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1650183167 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1650183167 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -264,9 +264,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1675628421 336600 6f90c65e159aaf8faaa6ea56bf6655c4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1675628419 2927660 866503428c240760a9890e0065a971e7 ""
-  "main.tex" 1677365915 3205 5fc38f22a58fe891fde56119af8826bf ""
-  "out/main.aux" 1677365918 1863 389eea1a19bacc6e2df31bf968644988 "pdflatex"
-  "out/main.nav" 1677365918 835 b5c49ba28d3d2049d1773682fb2767a8 "pdflatex"
+  "main.tex" 1677422431 3211 869443604fb3f63f65a754eb665e11e4 ""
+  "out/main.aux" 1677430894 1863 389eea1a19bacc6e2df31bf968644988 "pdflatex"
+  "out/main.nav" 1677430894 835 b5c49ba28d3d2049d1773682fb2767a8 "pdflatex"
   "out/main.out" 0 -1 0 "pdflatex"
   (generated)
   "out/main.aux"

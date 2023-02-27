@@ -1318,10 +1318,10 @@ INPUT /usr/share/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty
 INPUT /usr/share/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty
-INPUT ../resources/FlightPaths.tex
-INPUT ../resources/FlightPaths.tex
-INPUT ../resources/FlightPaths.tex
-INPUT ../resources/FlightPaths.tex
+INPUT ../resources/blub/FlightPaths.tex
+INPUT ../resources/blub/FlightPaths.tex
+INPUT ../resources/blub/FlightPaths.tex
+INPUT ../resources/blub/FlightPaths.tex
 INPUT out/main.aux
 INPUT out/main.aux
 INPUT out/main.aux
@@ -1429,7 +1429,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ../resources/FlightPathX.dat
+INPUT ../resources/blub/FlightPathX.dat
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -1459,9 +1459,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT ../resources/FlightPathY.dat
-INPUT ../resources/FlightPathZ.dat
-INPUT ../resources/FlightPath3D.dat
+INPUT ../resources/blub/FlightPathY.dat
+INPUT ../resources/blub/FlightPathZ.dat
+INPUT ../resources/blub/FlightPath3D.dat
 INPUT ../resources/BaseServo.jpg
 INPUT ../resources/BaseServo.jpg
 INPUT ../resources/BaseServo.jpg

@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1675956227 "/home/elias/Documents/GitHub/Matura_LaTeX/Wissenschaftlichkeit Leitfragen/main.tex" "out/main.pdf" "main" 1675956227
-  "../resources/FlightPaths.tex" 1675884595 2369 bff0c64d6d2e0546930f6ccea4c3c37a ""
+["pdflatex"] 1677423596 "/home/elias/Documents/GitHub/Matura_LaTeX/Wissenschaftlichkeit Leitfragen/main.tex" "out/main.pdf" "main" 1677423596
+  "../resources/FlightPaths.tex" 1677423596 2472 1b4453caefb528fd01c9ce0a1beb2ada ""
   "/home/elias/Documents/GitHub/Matura_LaTeX/Wissenschaftlichkeit Leitfragen/main.tex" 1675956226 3512 7a3c7bd34534a885f841efd9ac06693a ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1650183167 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -219,7 +219,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1675628421 336600 6f90c65e159aaf8faaa6ea56bf6655c4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1675628419 2927660 866503428c240760a9890e0065a971e7 ""
   "main.tex" 1675956226 3512 7a3c7bd34534a885f841efd9ac06693a ""
-  "out/main.aux" 1675956227 686 e6bf9f11827e1eae1d85e75b99e0a183 "pdflatex"
+  "out/main.aux" 1677423596 686 e6bf9f11827e1eae1d85e75b99e0a183 "pdflatex"
   "out/main.out" 0 -1 0 "pdflatex"
   (generated)
   "out/main.aux"
