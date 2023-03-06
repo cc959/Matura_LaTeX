@@ -13,50 +13,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88be7ab-c787-4303-9b2e-81a0c413a687" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Presentation/main.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/Render_To_PNG.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.fdb_latexmk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.fls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.nav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.snm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/main.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Presentation/out/renders/Slide_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/main.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.fdb_latexmk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.fls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wissenschaftlichkeit Leitfragen/out/main.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/ArmOnPlane1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/ArmOnPlane2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/ArmOnPlane3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/FlightPath3D.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/FlightPathX.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/FlightPathY.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/FlightPathZ.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/FlightPaths.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArmOnPlane1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArmOnPlane2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArmOnPlane3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightPathX.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightPathY.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FlightPathZ.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/main.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.fls" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.nav" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.nav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.snm" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.snm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/out/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/BaseServo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ServoDisc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/UpperServo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/blub/FlightPath3D.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/blub/FlightPath3D.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/blub/FlightPathX.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/blub/FlightPathX.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/blub/FlightPathY.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/blub/FlightPathY.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/blub/FlightPathZ.dat" beforeDir="false" afterPath="$PROJECT_DIR$/resources/blub/FlightPathZ.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/blub/FlightPaths.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resources/blub/FlightPaths.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/blub/GenerateFlightPaths.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/blub/GenerateFlightPaths.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,8 +95,8 @@
           <env name="BIBINPUTS" value="$PROJECT_DIR$/src" />
           <env name="BSTINPUTS" value="$PROJECT_DIR$/src:" />
         </envs>
-        <main-file />
-        <aux-dir>$PROJECT_DIR$/out</aux-dir>
+        <main-file>$USER_HOME$</main-file>
+        <aux-dir />
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -192,6 +167,7 @@
       <workItem from="1675777182365" duration="3637000" />
       <workItem from="1675841269410" duration="401000" />
       <workItem from="1676807497516" duration="638000" />
+      <workItem from="1677764840361" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Coole plots">
       <created>1675630322780</created>

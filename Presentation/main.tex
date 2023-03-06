@@ -13,12 +13,15 @@
 \usepackage{siunitx}
 \usepackage{color}
 \usepackage{graphicx}
+\usepackage{svg}
+
 
 \usepgfplotslibrary{units} % Allows to enter the units nicely
 \pgfplotsset{compat=1.18}
 
 \usetheme{Madrid}
 \usecolortheme{beaver}
+
 
 \input{../resources/blub/FlightPaths.tex}
 
@@ -36,80 +39,82 @@
 % Document
 \begin{document}
 
-\frame[plain]{\titlepage}
+\includeonlyframes{title,Camera3D}
 
+\frame[plain, label = title]{\titlepage}
 
-\begin{frame}
+\begin{frame}[label = xFlight]
 	\frametitle{Flugbahn - X Achse}
-
-	\FlightPathX
-
+	\begin{center}
+		\FlightPathX
+	\end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[label = yFlight]
 	\frametitle{Flugbahn - Y Achse}
-
-	\FlightPathY
-
+	\begin{center}
+		\FlightPathY
+	\end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[label = zFlight]
 	\frametitle{Flugbahn - Höhe}
-
-	\FlightPathZ
-
+	\begin{center}
+		\FlightPathZ
+	\end{center}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Flugbahn}
-
-	\FlightPath
-
+\begin{frame}[label = 3DFlight]
+	\frametitle{Flugbahn - 3D}
+	\begin{center}
+		\FlightPath
+	\end{center}
 \end{frame}
 
+\begin{frame}[label = ArmPictures]
+	\frametitle{Bauspezifikationen}
+	\begin{center}
+		\includegraphics[height = 200pt]{../resources/ArmOnPlane1}
+	\end{center}
+\end{frame}
 
+\begin{frame}[label = ArmPictures]
+	\frametitle{Bauspezifikationen}
+	\begin{center}
+		\includegraphics[height = 200pt]{../resources/ArmOnPlane2}
+	\end{center}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Bauspezifikationen}
-% 	\begin{center}
-% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane1}
-% 	\end{center}
-% \end{frame}
+\begin{frame}[label = ArmPictures]
+	\frametitle{Bauspezifikationen}
+	\begin{center}
+		\includegraphics[height = 200pt]{../resources/ArmOnPlane3}
+	\end{center}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Bauspezifikationen}
-% 	\begin{center}
-% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane2}
-% 	\end{center}
-% \end{frame}
+\begin{frame}[label = ArmPictures]
+	\frametitle{Bauspezifikationen}
+	\begin{center}
+		\includegraphics[height = 200pt]{../resources/ArmOnPlane1}
+	\end{center}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Bauspezifikationen}
-% 	\begin{center}
-% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane3}
-% 	\end{center}
-% \end{frame}
-
-% \begin{frame}
-% 	\frametitle{Bauspezifikationen}
-% 	\begin{center}
-% 		\includegraphics[height = 200pt]{../resources/ArmOnPlane1}
-% 	\end{center}
-% \end{frame}
-
-\begin{frame}
+\begin{frame}[label = Motor1]
 	\frametitle{Motoren}
 	\begin{figure}[h]
 		\begin{minipage}[c]{.46\linewidth}
 			\centering
-			\includegraphics[height = 200pt]{../resources/BaseServo.jpg}
+			\begin{overprint}
+				\onslide<1> \includegraphics[height = 200pt]{../resources/BaseServo.png}
+				\onslide<2> \includegraphics[height = 200pt]{../resources/BeefyServoArm.png}
+			\end{overprint}
 		\end{minipage}
 		\hfill%
 		\begin{minipage}[c]{.46\linewidth}
 			\begin{block}{Basis-Motor}
 				\begin{enumerate}
 					\item $\omega$ $\approx$ 180 $\frac{deg}{s}$ (Bei 12$\si{\volt}$)
-					\item $M$ $\approx$ 15 $\si{\newton}$
+					\item $M$ $\approx$ 15 $\si{\newton}\si{\meter}$
 					\item Drehbereich: $270^\circ$ ($255^\circ$)
 				\end{enumerate}
 			\end{block}
@@ -117,19 +122,21 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[label = Motor2]
 	\frametitle{Motoren}
 	\begin{figure}[h]
 		\begin{minipage}[c]{.46\linewidth}
 			\centering
-			\includegraphics[height = 200pt]{../resources/UpperServo.jpg}
-		\end{minipage}
+			\begin{overprint}
+				\onslide<1> \includegraphics[height = 200pt]{../resources/UpperServo.png}
+				\onslide<2> \includegraphics[height = 200pt]{../resources/ServoDisc.png}
+			\end{overprint}		\end{minipage}
 		\hfill%
 		\begin{minipage}[c]{.46\linewidth}
 			\begin{block}{Arm-Motor}
 				\begin{enumerate}
 					\item $\omega$ $\approx$ 180 $\frac{deg}{s}$ (Bei 12$\si{\volt}$)
-					\item $M$ $\approx$ 15 $\si{\newton}$
+					\item $M$ $\approx$ 15 $\si{\newton}\si{\meter}$
 					\item Drehbereich: $270^\circ$ ($255^\circ$)
 				\end{enumerate}
 			\end{block}
@@ -137,19 +144,76 @@
 	\end{figure}
 \end{frame}
 
-% \begin{frame}
-% 	\frametitle{Kamerasystem}
+\begin{frame}[label = Motor3]
+	\frametitle{Motoren}
+	\begin{figure}[h]
+		\begin{minipage}[c]{.46\linewidth}
+			\centering
+			\includegraphics[width = 200pt]{../resources/WristServo.png}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[c]{.46\linewidth}
+			\begin{block}{Hand-Motor}
+				\begin{enumerate}
+					\item $\omega$ $\approx$ 420 $\frac{deg}{s}$ (Bei 6$\si{\volt}$)
+					\item $M$ $\approx$ 1.1 $\si{\newton}\si{\meter}$
+					\item Drehbereich: $180^\circ$
+				\end{enumerate}
+			\end{block}
+		\end{minipage}
+	\end{figure}
+\end{frame}
 
-% 	\begin{tikzpicture}
-% 		\pgfmathsetmacro{\cubex}{2}
-% 		\pgfmathsetmacro{\cubey}{1}
-% 		\pgfmathsetmacro{\cubez}{1}
-% 		\draw[red,fill=yellow] (0,0,0) -- ++(-\cubex,0,0) -- ++(0,-\cubey,0) -- ++(\cubex,0,0) -- cycle;
-% 		\draw[red,fill=yellow] (0,0,0) -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- ++(0,0,\cubez) -- cycle;
-% 		\draw[red,fill=yellow] (0,0,0) -- ++(-\cubex,0,0) -- ++(0,0,-\cubez) -- ++(\cubex,0,0) -- cycle;
-% 	\end{tikzpicture}
+\begin{frame}[label = Motor4]
+	\frametitle{Motoren}
+	\begin{figure}[h]
+		\begin{minipage}[c]{.46\linewidth}
+			\centering
+			\includegraphics[width = 200pt]{../resources/HandServo.png}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[c]{.46\linewidth}
+			\begin{block}{Handgelenk-Motor}
+				\begin{enumerate}
+					\item $\omega$ $\approx$ 200 $\frac{deg}{s}$ (Bei 5$\si{\volt}$)
+					\item $M$ $\approx$ 0.15 $\si{\newton}\si{\meter}$
+					\item Drehbereich: $180^\circ$
+				\end{enumerate}
+			\end{block}
+		\end{minipage}
+	\end{figure}
+\end{frame}
 
-% \end{frame}
+\begin{frame}[label = Circuit]
+	\frametitle{Elektronik}
+
+	\centering
+	\includegraphics[width = 410pt]{../resources/circuit.png}
+
+\end{frame}
+
+\begin{frame}[label = Camera3D]
+	\frametitle{Kamerasystem}
+
+	\begin{figure}[h]
+		\begin{minipage}[c]{.46\linewidth}
+			\centering
+
+			\includegraphics[width = 175pt]{../resources/ELP-Camera.png}
+		\end{minipage}
+		\hfill%
+		\begin{minipage}[c]{.46\linewidth}
+			\begin{block}{ELP-Webcam}
+				\begin{enumerate}
+					\item $\omega$ $\approx$ 180 $\frac{deg}{s}$ (Bei 12$\si{\volt}$)
+					\item $M$ $\approx$ 15 $\si{\newton}\si{\meter}$
+					\item Drehbereich: $270^\circ$ ($255^\circ$)
+				\end{enumerate}
+			\end{block}
+		\end{minipage}
+	\end{figure}
+
+\end{frame}
 
 
 \end{document}
